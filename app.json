@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "scripsture-biometrics-demo2",
+    "slug": "scripsture-biometrics-demo2",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/scriptsure-mobile-icon-new-1024x1024.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/scriptsure-mobile-icon-new-1024x1024.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "plugins": [
+      [
+        "expo-local-authentication",
+        {
+          "faceIDPermission": "Allow $(PRODUCT_NAME) to use Face ID."
+        }
+      ]
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tczerno1.scripsturebiometricsdemo2",
+      "infoPlist": {
+        "NSFaceIDUsageDescription": "This app uses Face ID and Touch ID to verify the user's identity and protect sensitive data"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.tczerno1.scripsturebiometricsdemo2"
+    },
+    "web": {
+      "favicon": "./assets/scriptsure-mobile-icon-new-1024x1024.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f6fdb6a0-6288-444d-8a09-03d3c9c86a27"
+      }
+    }
+  }
+}
